@@ -1,0 +1,18 @@
+file = open("sample.txt", "r")
+
+data = file.read()
+
+# Count characters
+characters = len(data)
+
+# Count words
+words = len(data.split())
+
+# Count lines
+lines = len(data.splitlines())
+
+print("Characters:", characters)
+print("Words:", words)
+print("Lines:", lines)
+
+file.close()
